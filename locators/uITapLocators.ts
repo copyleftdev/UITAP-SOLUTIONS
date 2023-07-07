@@ -1,7 +1,7 @@
 export const UITAP_LOCS = {
     dynamicIdPath: '/dynamicid',
     classAttribPath: '/classattr',
-    hiddenLayerPath: '/hiddenlayer',
+    hiddenLayerPath: '/hiddenlayers',
     loadDelayPath: '/loaddelay',
     ajaxDataPath: '/ajax',
     clientDelayPath: '/clientdelay',

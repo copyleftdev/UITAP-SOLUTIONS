@@ -17,17 +17,11 @@ export const UITAP_LOCS = {
     nonBreakingSpacePath: '/nbsp',
     overlappedElementPath: '/overlapped',
     shadowDomPath: '/shadowdom',
+};
+export interface PageLocators {
+  buttonAfterDelay: [string, { name: string }];
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+export const loadDelayPage: PageLocators = {
+  buttonAfterDelay: ['button', { name: 'Button Appearing After Delay' }],
 };

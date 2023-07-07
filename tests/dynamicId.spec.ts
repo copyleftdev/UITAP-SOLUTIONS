@@ -1,4 +1,5 @@
 import {test, expect} from '@playwright/test';
+import { UITAP_LOCS } from '../locators/uITapLocators';
 
 // Modern applications often generate dynamic IDs for elements. In this case ID is not a reliable attribute for using in element selector.
 //  By default many UI automation tools record IDs and this results in tests broken from the very beginning. An automation tool needs a way
@@ -10,6 +11,6 @@ import {test, expect} from '@playwright/test';
 
 
 test('dynamic id', async ({page}) => {
-await page.goto('/dynamicid');
+await page.goto(UITAP_LOCS.dynamicIdPath);
 await page.getByRole('button', { name: 'Button with Dynamic ID' }).click();
 });

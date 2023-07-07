@@ -20,8 +20,11 @@ export const UITAP_LOCS = {
 };
 export interface PageLocators {
   buttonAfterDelay: [string, { name: string }];
+  ajaxDataButton: [string, { name: string }];
 }
 
 export const loadDelayPage: PageLocators = {
   buttonAfterDelay: ['button', { name: 'Button Appearing After Delay' }],
+  
+  ajaxDataButton: ['button', { name: 'Button Triggering AJAX Request' }],
 };
